@@ -1,0 +1,165 @@
+/* General page style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #121212;
+  color: #d4af37; /* Metallic gold */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #d4af37;
+}
+
+/* Section headings */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  border-left: 5px solid #d4af37;
+  padding-left: 10px;
+  text-shadow: 0 0 4px #b38f11;
+}
+
+/* Color coding by workout type */
+.push-day {
+  background: linear-gradient(135deg, #3d2f00 0%, #6f5800 100%);
+  box-shadow: 0 4px 12px rgba(183, 147, 0, 0.6);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  color: #f9e39a;
+}
+
+.pull-day {
+  background: linear-gradient(135deg, #1a1a1a 0%, #5a471a 100%);
+  box-shadow: 0 4px 12px rgba(164, 133, 45, 0.5);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  color: #d4b75b;
+}
+
+.legs-day {
+  background: linear-gradient(135deg, #1a1a1a 0%, #594d1a 100%);
+  box-shadow: 0 4px 12px rgba(173, 153, 63, 0.6);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  color: #d7bf6c;
+}
+
+.rest-day {
+  background: #222222;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  color: #bfa94f;
+  font-style: italic;
+  box-shadow: inset 0 0 10px #d4af37;
+}
+
+/* Lists and labels */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+label:hover {
+  color: #fff3b0;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #d4af37;
+  filter: drop-shadow(0 0 2px #bfa94f);
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.1);
+}
+
+/* YouTube links */
+.yt-link {
+  margin-left: auto;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: 700;
+  filter: drop-shadow(0 0 3px #bfa94f);
+  transition: color 0.3s ease;
+}
+
+.yt-link:hover {
+  color: #fff3b0;
+  text-shadow: 0 0 6px #d4af37;
+}
+
+/* Core and Running checkboxes styling */
+.core-checkbox,
+.running-checkbox {
+  display: block;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Reset button */
+#reset-button {
+  display: block;
+  margin: 40px auto;
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  background-color: #d4af37;
+  color: #121212;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 2px;
+  box-shadow: 0 0 15px #bfa94f;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+#reset-button:hover {
+  background-color: #bfa94f;
+  color: #000;
+  box-shadow: 0 0 20px #fff3b0;
+}
